@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туторіал</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .toc {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .toc a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #007BFF;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .toc a:hover {
+            background: #007BFF;
+            color: white;
+        }
+        .step {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .step img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Інтерактивний Туторіал</h1>
+        <div class="toc">
+            <strong>Зміст:</strong>
+            <a href="#step1">1. Головна сторінка</a>
+            <a href="#step2">2. Перехід на адмін панель</a>
+            <a href="#step3">3. Система авторизації</a>
+            <a href="#step4">4. Адмін панель</a>
+            <a href="#step5">5. Редагування розкладу</a>
+            <a href="#step6">6. Додавання нового запису розкладу та викладача</a>
+            <a href="#step7">7. Екзамени та залікі</a>
+            <a href="#step8">8. Редагування перездач</a>
+            <a href="#step9">9. Завантаження розкладу</a>
+            <a href="#step10">10. Відображення Заліків, Екзаменів та Перездач</a>
+        </div>
+
+        <div id="step1" class="step">
+            <h2>1. Головна сторінка</h2>
+            <img src="../image/1.jpg" alt="Головна сторінка">
+            <p>Це є головна сторінка з відображенням розкладу.</p>
+        </div>
+
+        <div id="step2" class="step">
+            <h2>2. Перехід на адмін панель </h2>
+            <img src="../image/2.jpg">
+            <img src="../image/3.jpg">
+            <p>Перехід на адмін панель виконується через додавання до посилання /admin_panel.</p>
+        </div>
+
+        <div id="step3" class="step">
+            <h2>3. Система авторизації</h2>
+            <img src="../image/4.jpg">
+            <p>Якщо ви не авторизовані на сторінці адмін панелі то вам на неї не потрапити тому авторизуйтесь в системі через отриманий логін та пароль </p>
+        </div>
+
+        <div id="step4" class="step">
+            <h2>4. Адмін панель </h2>
+            <img src="../image/5.jpg">
+            <p>Це є сторінка адмін панелі з усіма її функціями</p>
+        </div>
+
+        <div id="step5" class="step">
+            <h2>5. Редагування розкладу </h2>
+            <img src="../image/6.jpg">
+            <p>В цьому розділ можна редагувати записи в розкладі або видаляти їх </p>
+            
+            <h3> Фільтрація записів </h3>
+            <img src="../image/7.jpg">
+            <p>Тут для зручності ви можете відфільтрувати записи вказавши день який вам потріно та ввевши групу <br>Потім при нажаті на кнопку "Фільтрувати" відобразиться лише вибраний день та дисципліни вибраної групи </p>
+            
+            <h3> Редагування дня </h3>
+            <img src="../image/8.jpg">
+            <p>В цьому випадаючому списку можливо змінювати день запису</p>
+
+            <h3> Редагування Часу </h3>
+            <img src="../image/9.jpg">
+            <p>В цьому випадаючому списку можливо змінювати час запису <br> Номер пари автоматично підтягнеться в залежності від обраного часу</p>
+
+            <h3> Редагування викладача </h3>
+            <img src="../image/10.jpg">
+            <p>В цьому випадаючому списку можливо змінювати викладача запису <br>Також є фільтр для пошуку викладача <br> 
+            Якщо в даному випадаючому списку немає потрібного вам викладача то перейдіть в <a href="#step6">даний пункт</a> а добавте його </p>
+
+            <h3> Збереження та видалення </h3>
+            <img src="../image/11.jpg">
+            <p> Біля кожного запису є кнопки "Зберегти" (Для збереження внесених змін ) та "Видалення" (Для видалення запису з розкладу )</p>
+        </div>
+
+        <div id="step6" class="step">
+            <h2>6. Додавання нового запису розкладу та викладача </h2>
+            <img src="../image/12.jpg">
+            <p>Тут ви вводите потрібні дані <br>    
+            -Вибираєте день запису з випадаючого списку<br>
+            -Вибираєте тип тижня з випадаючого списку<br>
+            -Вказуєте групу<br>
+            -Вибираєте час з випадаючого списку (номер пари підтягнеться автоматично) <br>
+            -Вписуєте номер групи <br>
+            -Вписуєте аудиторію <br>
+            -обираєте викладача з випадаючого списку (Тут також є Пошуковий фільтр) <br>
+            -Натискаєте кнопку "Додати" для збереження запису
+            </p>
+            <h3> Додавання викладача </h3>
+            <img src="../image/вик.jpg">
+            <p>У цій формі ви можете додати нового викладача</p>
+        </div>
+
+        <div id="step7" class="step">
+            <h2>7. Екзамени та залікі </h2>
+            <img src="../image/13.jpg">
+            <p> У цьому розділи можливо редагувати та додавати Залікі з Екзаменами</p><br>
+
+            <h3> Фільтр за групами  </h3>
+            <img src="../image/14.jpg">
+            <p>У цьому розділі є випадаючий список для показу записів для конкретної групи (Фільр працює одночасно і для заліків і для екзаменів)</p>
+
+            <h3> Додавання та редагування заліків </h3>
+            <img src="../image/15.jpg">
+            <p> Також є форма для додавання нових залікі <br>
+            Все так само як із звичайними записами вносите дані та нажимаєте на кнопку "Додати залік" для збереження </p><br>
+            
+            <h3> Додавання та редагування екзаменів </h3>
+            <img src="../image/16.jpg">
+            <p> І аналогічно для екзаменів</p><br>
+
+        </div>
+
+        <div id="step8" class="step">
+            <h2>8. Редагування перездач </h2>
+            <img src="../image/17.jpg">
+            <p> У цьому розділи можливо редагувати та додавати Перездачі і теж є фільтрація але вже за курсом</p><br>
+            <h3> Додавання нових записів перездач</h3>
+            <img src="../image/18.jpg">
+            
+        </div>
+        
+        <div id="step9" class="step">
+            <h2>9. Завантаження розкладу </h2>
+            <img src="../image/19.jpg">
+            <p> У цьому розділи можливо обрати потрібні групи для кафедри та завантажити розклад у форматі exel(xlsx)</p><br>
+            <h3> Пошук групи</h3>
+            <img src="../image/20.jpg">
+            <p> Тут можливо через пошук швидко знайти групи які вам потрібні</p><br>
+            <img src="../image/21.jpg">
+            <p> Так відображається розклад в еxel</p>
+        </div>
+        <div id="step10" class="step">
+            <h2>10. Відображення Заліків, Екзаменів та Перездач </h2>
+            <img src="../image/22.jpg">
+            <p> В цьому розділі є можливість вкл/викл відображення даних таблиць на головній сторінці </p>
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const steps = document.querySelectorAll(".step");
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                }, { threshold: 0.2 });
+                
+                steps.forEach(step => observer.observe(step));
+            });
+        </script>
+    </div>
+</body>
+</html>
